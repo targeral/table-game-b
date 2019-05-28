@@ -4,6 +4,7 @@
     "description": "桌游商户托管",
     "main": "index.js",
     "scripts": {
+        "dev:win": "webpack-dev-server --progress --colors --display-chunks --watch --config ./build/webpack.dev.js",
         "build": "rm -rf ./dist && export NODE_ENV=production && webpack --progress --colors --display-chunks --config ./build/webpack.prod.js",
         "build:online": "npm run build",
         "build:offline": "rm -rf ./dist && export NODE_ENV=production && export ENV_MODE=offline && webpack --progress --colors --display-chunks --config ./build/webpack.prod.js",
