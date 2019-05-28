@@ -12,7 +12,7 @@ const Routers = (props: RoutersProps): React.ReactElement => {
     return (
         <Router>
             {
-                props.pages.map(([path, component, props = {}]) => (
+                props.pages.map(([path, component, props = {}]: Page) => (
                     <Route 
                         key={path}
                         {...props}
