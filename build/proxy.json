@@ -1,0 +1,12 @@
+[
+    {
+        "target": "yangmutong",
+        "context": [
+            "/hairuo/request.ajax",
+            "/life"
+        ],
+        "headers": {
+            "Host": "icoptest.baidu.com"
+        }
+    }
+]

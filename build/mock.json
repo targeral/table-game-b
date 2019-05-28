@@ -1,0 +1,6 @@
+{
+    "/hairuo/request.ajax": {
+        "porsche/GET/LifeService/getOrderInfo": "../mock/getInfo.json"
+    },
+    "/life/getOrderInfo": "../mock/getInfo.json"
+}

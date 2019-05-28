@@ -1,0 +1,119 @@
+{
+    "name": "table-game-b",
+    "version": "1.0.0",
+    "description": "桌游商户托管",
+    "main": "index.js",
+    "scripts": {
+        "build": "rm -rf ./dist && export NODE_ENV=production && webpack --progress --colors --display-chunks --config ./build/webpack.prod.js",
+        "build:online": "npm run build",
+        "build:offline": "rm -rf ./dist && export NODE_ENV=production && export ENV_MODE=offline && webpack --progress --colors --display-chunks --config ./build/webpack.prod.js",
+        "dev": "rm -rf ./dist && export NODE_ENV=development && webpack-dev-server --progress --colors --display-chunks --watch --config ./build/webpack.dev.js",
+        "test": "rm -rf ./dist && export NODE_ENV=development && export ENV_MODE=offline && webpack-dev-server --progress --colors --display-chunks --watch --config ./build/webpack.dev.js --dev-mode test",
+        "analyze": "rm -rf ./dist && export NODE_ENV=production && webpack --config ./build/webpack.analyze.js"
+    },
+    "keywords": [
+        "react",
+        "ant-design"
+    ],
+    "author": "targeral",
+    "license": "ISC",
+    "dependencies": {
+        "@types/lodash": "^4.14.123",
+        "@types/query-string": "^5.0.1",
+        "@types/react": "^16.8.8",
+        "@types/react-dom": "^16.8.2",
+        "@types/react-redux": "^7.0.5",
+        "antd": "^3.8.0",
+        "axios": "^0.18.0",
+        "classnames": "^2.2.6",
+        "lodash": "^4.17.11",
+        "lodash-decorators": "^6.0.1",
+        "memoize-one": "^5.0.4",
+        "query-string": "^5.0.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-if": "^3.4.0",
+        "react-redux": "^6.0.1",
+        "react-router-dom": "^5.0.0",
+        "redux": "^4.0.1",
+        "redux-devtools-extension": "^2.13.8",
+        "redux-thunk": "^2.3.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-plugin-prettier": "^2.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.3.4",
+        "@babel/plugin-proposal-class-properties": "^7.3.4",
+        "@babel/plugin-proposal-decorators": "^7.3.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/plugin-transform-runtime": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/preset-typescript": "^7.3.3",
+        "@babel/runtime": "^7.3.4",
+        "@types/classnames": "^2.2.7",
+        "@types/node": "^12.0.2",
+        "@types/react-router-dom": "^4.3.3",
+        "autoprefixer": "^9.5.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.5",
+        "babel-plugin-import": "^1.11.0",
+        "babel-plugin-lodash": "^3.3.4",
+        "copy-webpack-plugin": "^5.0.1",
+        "css-loader": "^2.1.1",
+        "cssnano": "^4.1.10",
+        "eslint": "^5.15.3",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-loader": "^2.1.2",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-jsx-a11y": "^6.2.1",
+        "eslint-plugin-react": "^7.12.4",
+        "eslint-plugin-react-hooks": "^1.5.1",
+        "file-loader": "^3.0.1",
+        "fork-ts-checker-webpack-plugin": "^1.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "husky": "^1.3.1",
+        "less": "^3.9.0",
+        "less-loader": "^4.1.0",
+        "lint-staged": "^8.1.5",
+        "mini-css-extract-plugin": "^0.5.0",
+        "minimist": "^1.2.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "postcss-less": "^3.1.4",
+        "postcss-loader": "^3.0.0",
+        "postcss-preset-env": "^6.6.0",
+        "prettier": "^1.16.4",
+        "style-loader": "^0.23.1",
+        "tslint": "^5.14.0",
+        "tslint-config-airbnb": "^5.11.1",
+        "tslint-react": "^3.6.0",
+        "typescript": "^3.3.3333",
+        "uglifyjs-webpack-plugin": "2.1.2",
+        "unused-files-webpack-plugin": "^3.4.0",
+        "url-loader": "^1.1.2",
+        "webpack": "^4.29.6",
+        "webpack-bundle-analyzer": "^3.1.0",
+        "webpack-cli": "^3.3.0",
+        "webpack-dev-server": "^3.2.1",
+        "webpack-merge": "^4.2.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "linters": {
+            "src/**/*.{js,jsx,ts,tsx}": [
+                "tslint"
+            ]
+        },
+        "ignore": [
+            "**/dist/*.js"
+        ]
+    },
+    "theme": {
+        "icon-url": "/static/fonts/iconfont"
+    }
+}
