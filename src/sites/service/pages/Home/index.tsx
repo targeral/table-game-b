@@ -1,4 +1,5 @@
 import React, { useState, FormEvent, MouseEvent, FC } from 'react';
+import MouseTracker from '../../components/MouseTracker';
 
 interface HomeProps {
     query?: string;
@@ -26,6 +27,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
                 value={inputValue}
                 onChange={onChange}
             />
+            <MouseTracker></MouseTracker>
             <button onClick={onClick}>change</button>
         </div>
     );
