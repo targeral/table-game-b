@@ -1,5 +1,6 @@
 import React, { useState, FormEvent, MouseEvent, FC } from 'react';
 import MouseTracker from '../../components/MouseTracker';
+import ExpirationTimeLab from '../../components/ExpirationTime';
 
 interface HomeProps {
     query?: string;
@@ -19,16 +20,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
 
     return (
         <div>
-            <header>
-                <h1>{title}</h1>
-            </header>
-            <input
-                type="text"
-                value={inputValue}
-                onChange={onChange}
-            />
-            <MouseTracker></MouseTracker>
-            <button onClick={onClick}>change</button>
+            <ExpirationTimeLab></ExpirationTimeLab>
         </div>
     );
 };
