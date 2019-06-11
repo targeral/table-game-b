@@ -20,7 +20,8 @@
     "node_modules",
     "build",
     "scripts",
-    "postcss.config.js"
+    "postcss.config.js",
+    "study"
   ],
   "types": [
     "typePatches"

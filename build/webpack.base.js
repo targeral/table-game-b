@@ -40,6 +40,7 @@ const baseConfig = {
             {
                 test: /\.(ts|js)x?$/,
                 exclude: /node_modules/,
+                include: /src/,
                 use: ['babel-loader']
             },
             {

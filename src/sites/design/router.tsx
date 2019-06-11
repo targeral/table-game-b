@@ -8,9 +8,10 @@ export interface RoutersProps {
     pages: Pages;
 }
 
+const BASENAME = '/design';
 const Routers = (props: RoutersProps): React.ReactElement => {
     return (
-        <Router>
+        <Router basename={BASENAME}>
             {
                 props.pages.map(([path, component, props = {}]: Page) => (
                     <Route 
