@@ -15,9 +15,10 @@ export class Visitor implements IVisitor {
         `;
     }
     private getCommonEmployeeInfo(commonEmployee: CommonEmployee): string {
-        return `
-            ${this.getBasicInfo(commonEmployee)}
-            工作：${commonEmployee.getJob()}
+        return '';
+        // return `
+        //     ${this.getBasicInfo(commonEmployee)}
+        //     工作：${commonEmployee.getJob()}
         `;
     }
     private getManageInfo(manager: Manager): string {

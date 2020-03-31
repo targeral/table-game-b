@@ -12,14 +12,16 @@
 //         this.job = job;
 //     }
 
-//     /**
-//      * getOtherInfo
-//      */
-//     public accept(visitor: IVisitor): void {
-//         visitor.visit(this);
-//     }
+//     // /**
+//     //  * getOtherInfo
+//     //  */
+//     // public accept(visitor: IVisitor): void {
+//     //     visitor.visit(this);
+//     // }
 
-//     public accept(): void {
+//     // public accept(): void {
         
-//     }
+//     // }
 // }
+
+export class CommonEmployee {}

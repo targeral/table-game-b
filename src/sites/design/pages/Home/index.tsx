@@ -7,7 +7,7 @@ import React, { useState, useRef, FormEvent, MouseEvent, FC, Ref, MutableRefObje
 // import MockScroll from '../../components/MockScroll';
 // import NW from '../../components/NvWa';
 // import IteratorMode from '../../components/IteratorMode';
-import Interpretor from '../../components/Interpretor';
+// import Interpretor from '../../components/Interpretor';
 
 
 interface HomeProps {
@@ -19,7 +19,7 @@ const Home: FC<HomeProps> = (props: HomeProps) => {
         <div>
             {/* <NW></NW> */}
             {/* <IteratorMode></IteratorMode> */}
-            <Interpretor></Interpretor>
+            {/* <Interpretor></Interpretor> */}
         </div>
         // <MockScroll>
         //     <Client></Client>
